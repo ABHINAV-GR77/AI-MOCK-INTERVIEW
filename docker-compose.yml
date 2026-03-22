@@ -1,0 +1,48 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: backend
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+      - redis
+      - chromadb
+    env_file:
+      - .env
+    volumes:
+      - ./frontend:/app/backend/frontend
+      - ./backend/app:/app/backend/app
+      - ./backend/data:/app/backend/data
+      - ./backend/seed_data.py:/app/backend/seed_data.py
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  chromadb:
+    image: chromadb/chroma:0.5.3
+    container_name: chromadb
+    ports:
+      - "8001:8000"
+    volumes:
+      - chroma_data:/chroma/chroma
+
+volumes:
+  mongo_data:
+  redis_data:
+  chroma_data:

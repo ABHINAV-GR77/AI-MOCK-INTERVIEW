@@ -1,0 +1,187 @@
+question,role,category,difficulty
+What is a data pipeline?,data_engineer,technical,easy
+What is ETL?,data_engineer,technical,easy
+What is the difference between a data warehouse and a data lake?,data_engineer,technical,easy
+What is SQL?,data_engineer,technical,easy
+What is a primary key?,data_engineer,technical,easy
+What is data normalization?,data_engineer,technical,easy
+What is Apache Spark?,data_engineer,technical,easy
+What is the difference between batch and stream processing?,data_engineer,technical,easy
+Why do you want to be a data engineer?,data_engineer,technical,easy
+What programming languages do you use for data engineering?,data_engineer,technical,easy
+What is a schema?,data_engineer,technical,easy
+What is a foreign key?,data_engineer,technical,easy
+What is Hadoop?,data_engineer,technical,easy
+What is a data catalog?,data_engineer,technical,easy
+Tell me about a data project you have worked on.,data_engineer,technical,easy
+What are the key responsibilities of a data engineer?,data_engineer,technical,easy
+How do you stay updated in the data engineer field?,data_engineer,technical,easy
+What tools does a data engineer use daily?,data_engineer,technical,easy
+What are the biggest challenges facing data engineers today?,data_engineer,technical,easy
+How do you measure success as a data engineer?,data_engineer,technical,easy
+What certifications are valuable for a data engineer?,data_engineer,technical,easy
+How does a data engineer collaborate with other teams?,data_engineer,technical,easy
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,easy
+How do you handle competing priorities as a data engineer?,data_engineer,technical,easy
+What does great performance look like for a data engineer?,data_engineer,technical,easy
+How do you approach professional development as a data engineer?,data_engineer,technical,easy
+What industry trends should a data engineer know about?,data_engineer,technical,easy
+How do you build credibility as a data engineer?,data_engineer,technical,easy
+What are the common mistakes new data engineers make?,data_engineer,technical,easy
+How do you demonstrate value as a data engineer?,data_engineer,technical,easy
+What are the key responsibilities of a data engineer?,data_engineer,technical,easy
+How do you stay updated in the data engineer field?,data_engineer,technical,easy
+What tools does a data engineer use daily?,data_engineer,technical,easy
+What are the biggest challenges facing data engineers today?,data_engineer,technical,easy
+How do you measure success as a data engineer?,data_engineer,technical,easy
+What certifications are valuable for a data engineer?,data_engineer,technical,easy
+How does a data engineer collaborate with other teams?,data_engineer,technical,easy
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,easy
+How do you handle competing priorities as a data engineer?,data_engineer,technical,easy
+What does great performance look like for a data engineer?,data_engineer,technical,easy
+How do you approach professional development as a data engineer?,data_engineer,technical,easy
+What industry trends should a data engineer know about?,data_engineer,technical,easy
+How do you build credibility as a data engineer?,data_engineer,technical,easy
+What are the common mistakes new data engineers make?,data_engineer,technical,easy
+How do you demonstrate value as a data engineer?,data_engineer,technical,easy
+What are the key responsibilities of a data engineer?,data_engineer,technical,easy
+How do you stay updated in the data engineer field?,data_engineer,technical,easy
+What tools does a data engineer use daily?,data_engineer,technical,easy
+What are the biggest challenges facing data engineers today?,data_engineer,technical,easy
+How do you measure success as a data engineer?,data_engineer,technical,easy
+What certifications are valuable for a data engineer?,data_engineer,technical,easy
+How does a data engineer collaborate with other teams?,data_engineer,technical,easy
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,easy
+How do you handle competing priorities as a data engineer?,data_engineer,technical,easy
+What does great performance look like for a data engineer?,data_engineer,technical,easy
+How do you approach professional development as a data engineer?,data_engineer,technical,easy
+What industry trends should a data engineer know about?,data_engineer,technical,easy
+How do you build credibility as a data engineer?,data_engineer,technical,easy
+What are the common mistakes new data engineers make?,data_engineer,technical,easy
+How do you demonstrate value as a data engineer?,data_engineer,technical,easy
+What are the key responsibilities of a data engineer?,data_engineer,technical,easy
+How do you stay updated in the data engineer field?,data_engineer,technical,easy
+How do you design a data warehouse schema?,data_engineer,technical,medium
+What is the difference between star schema and snowflake schema?,data_engineer,technical,medium
+How does Apache Kafka work?,data_engineer,technical,medium
+What is data partitioning?,data_engineer,technical,medium
+How do you handle missing data in a pipeline?,data_engineer,technical,medium
+How do you optimize a slow SQL query?,data_engineer,technical,medium
+What is an ELT process?,data_engineer,technical,medium
+How do you handle schema evolution?,data_engineer,technical,medium
+What is Apache Airflow?,data_engineer,technical,medium
+What is data lineage?,data_engineer,technical,medium
+Tell me about a time you fixed a broken data pipeline.,data_engineer,technical,medium
+How do you ensure data quality?,data_engineer,technical,medium
+How do you collaborate with data scientists?,data_engineer,technical,medium
+A pipeline is failing silently. How do you debug it?,data_engineer,technical,medium
+How would you design a real-time pipeline for an e-commerce platform?,data_engineer,technical,medium
+What are the key responsibilities of a data engineer?,data_engineer,technical,medium
+How do you stay updated in the data engineer field?,data_engineer,technical,medium
+What tools does a data engineer use daily?,data_engineer,technical,medium
+What are the biggest challenges facing data engineers today?,data_engineer,technical,medium
+How do you measure success as a data engineer?,data_engineer,technical,medium
+What certifications are valuable for a data engineer?,data_engineer,technical,medium
+How does a data engineer collaborate with other teams?,data_engineer,technical,medium
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,medium
+How do you handle competing priorities as a data engineer?,data_engineer,technical,medium
+What does great performance look like for a data engineer?,data_engineer,technical,medium
+How do you approach professional development as a data engineer?,data_engineer,technical,medium
+What industry trends should a data engineer know about?,data_engineer,technical,medium
+How do you build credibility as a data engineer?,data_engineer,technical,medium
+What are the common mistakes new data engineers make?,data_engineer,technical,medium
+How do you demonstrate value as a data engineer?,data_engineer,technical,medium
+What are the key responsibilities of a data engineer?,data_engineer,technical,medium
+How do you stay updated in the data engineer field?,data_engineer,technical,medium
+What tools does a data engineer use daily?,data_engineer,technical,medium
+What are the biggest challenges facing data engineers today?,data_engineer,technical,medium
+How do you measure success as a data engineer?,data_engineer,technical,medium
+What certifications are valuable for a data engineer?,data_engineer,technical,medium
+How does a data engineer collaborate with other teams?,data_engineer,technical,medium
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,medium
+How do you handle competing priorities as a data engineer?,data_engineer,technical,medium
+What does great performance look like for a data engineer?,data_engineer,technical,medium
+How do you approach professional development as a data engineer?,data_engineer,technical,medium
+What industry trends should a data engineer know about?,data_engineer,technical,medium
+How do you build credibility as a data engineer?,data_engineer,technical,medium
+What are the common mistakes new data engineers make?,data_engineer,technical,medium
+How do you demonstrate value as a data engineer?,data_engineer,technical,medium
+What are the key responsibilities of a data engineer?,data_engineer,technical,medium
+How do you stay updated in the data engineer field?,data_engineer,technical,medium
+What tools does a data engineer use daily?,data_engineer,technical,medium
+What are the biggest challenges facing data engineers today?,data_engineer,technical,medium
+How do you measure success as a data engineer?,data_engineer,technical,medium
+What certifications are valuable for a data engineer?,data_engineer,technical,medium
+How does a data engineer collaborate with other teams?,data_engineer,technical,medium
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,medium
+How do you handle competing priorities as a data engineer?,data_engineer,technical,medium
+What does great performance look like for a data engineer?,data_engineer,technical,medium
+How do you approach professional development as a data engineer?,data_engineer,technical,medium
+What industry trends should a data engineer know about?,data_engineer,technical,medium
+How do you build credibility as a data engineer?,data_engineer,technical,medium
+What are the common mistakes new data engineers make?,data_engineer,technical,medium
+How do you demonstrate value as a data engineer?,data_engineer,technical,medium
+What are the key responsibilities of a data engineer?,data_engineer,technical,medium
+How do you stay updated in the data engineer field?,data_engineer,technical,medium
+How do you design a distributed data system at scale?,data_engineer,technical,hard
+What is the Lambda architecture?,data_engineer,technical,hard
+How do you implement exactly-once processing in streaming?,data_engineer,technical,hard
+What is a data mesh architecture?,data_engineer,technical,hard
+What is a lakehouse architecture?,data_engineer,technical,hard
+How do you handle petabyte-scale data?,data_engineer,technical,hard
+Describe the most complex data system you have built.,data_engineer,technical,hard
+Tell me about a major data infrastructure migration you led.,data_engineer,technical,hard
+How have you improved data reliability?,data_engineer,technical,hard
+How would you design a real-time fraud detection pipeline?,data_engineer,technical,hard
+How would you build a data platform for 100 data sources?,data_engineer,technical,hard
+A pipeline processing 10TB/day is 6 hours behind. How do you fix it?,data_engineer,technical,hard
+How would you design an ML feature store?,data_engineer,technical,hard
+How do you implement data governance at scale?,data_engineer,technical,hard
+What is change data capture (CDC)?,data_engineer,technical,hard
+What are the key responsibilities of a data engineer?,data_engineer,technical,hard
+How do you stay updated in the data engineer field?,data_engineer,technical,hard
+What tools does a data engineer use daily?,data_engineer,technical,hard
+What are the biggest challenges facing data engineers today?,data_engineer,technical,hard
+How do you measure success as a data engineer?,data_engineer,technical,hard
+What certifications are valuable for a data engineer?,data_engineer,technical,hard
+How does a data engineer collaborate with other teams?,data_engineer,technical,hard
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,hard
+How do you handle competing priorities as a data engineer?,data_engineer,technical,hard
+What does great performance look like for a data engineer?,data_engineer,technical,hard
+How do you approach professional development as a data engineer?,data_engineer,technical,hard
+What industry trends should a data engineer know about?,data_engineer,technical,hard
+How do you build credibility as a data engineer?,data_engineer,technical,hard
+What are the common mistakes new data engineers make?,data_engineer,technical,hard
+How do you demonstrate value as a data engineer?,data_engineer,technical,hard
+What are the key responsibilities of a data engineer?,data_engineer,technical,hard
+How do you stay updated in the data engineer field?,data_engineer,technical,hard
+What tools does a data engineer use daily?,data_engineer,technical,hard
+What are the biggest challenges facing data engineers today?,data_engineer,technical,hard
+How do you measure success as a data engineer?,data_engineer,technical,hard
+What certifications are valuable for a data engineer?,data_engineer,technical,hard
+How does a data engineer collaborate with other teams?,data_engineer,technical,hard
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,hard
+How do you handle competing priorities as a data engineer?,data_engineer,technical,hard
+What does great performance look like for a data engineer?,data_engineer,technical,hard
+How do you approach professional development as a data engineer?,data_engineer,technical,hard
+What industry trends should a data engineer know about?,data_engineer,technical,hard
+How do you build credibility as a data engineer?,data_engineer,technical,hard
+What are the common mistakes new data engineers make?,data_engineer,technical,hard
+How do you demonstrate value as a data engineer?,data_engineer,technical,hard
+What are the key responsibilities of a data engineer?,data_engineer,technical,hard
+How do you stay updated in the data engineer field?,data_engineer,technical,hard
+What tools does a data engineer use daily?,data_engineer,technical,hard
+What are the biggest challenges facing data engineers today?,data_engineer,technical,hard
+How do you measure success as a data engineer?,data_engineer,technical,hard
+What certifications are valuable for a data engineer?,data_engineer,technical,hard
+How does a data engineer collaborate with other teams?,data_engineer,technical,hard
+What is your approach to continuous improvement as a data engineer?,data_engineer,technical,hard
+How do you handle competing priorities as a data engineer?,data_engineer,technical,hard
+What does great performance look like for a data engineer?,data_engineer,technical,hard
+How do you approach professional development as a data engineer?,data_engineer,technical,hard
+What industry trends should a data engineer know about?,data_engineer,technical,hard
+How do you build credibility as a data engineer?,data_engineer,technical,hard
+What are the common mistakes new data engineers make?,data_engineer,technical,hard
+How do you demonstrate value as a data engineer?,data_engineer,technical,hard
+What are the key responsibilities of a data engineer?,data_engineer,technical,hard
+How do you stay updated in the data engineer field?,data_engineer,technical,hard

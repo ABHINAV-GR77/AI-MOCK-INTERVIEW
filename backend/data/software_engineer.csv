@@ -1,0 +1,177 @@
+question,role,category,difficulty
+What is a data structure?,technical,technical,easy
+What is an array?,technical,technical,easy
+What is a linked list?,technical,technical,easy
+What is a stack?,technical,technical,easy
+What is a queue?,technical,technical,easy
+What is recursion?,technical,technical,easy
+What is Big O notation?,technical,technical,easy
+What is object-oriented programming?,technical,technical,easy
+What is the difference between a class and an object?,technical,technical,easy
+What is binary search?,technical,technical,easy
+What is a hash table?,technical,technical,easy
+What is the difference between SQL and NoSQL?,technical,technical,easy
+What is a REST API?,technical,technical,easy
+What is version control?,technical,technical,easy
+What is the difference between HTTP and HTTPS?,technical,technical,easy
+What is inheritance in OOP?,technical,technical,easy
+What is polymorphism?,technical,technical,easy
+What is encapsulation?,technical,technical,easy
+What is abstraction in programming?,technical,technical,easy
+What is a compiler vs an interpreter?,technical,technical,easy
+What is the difference between a stack and a heap?,technical,technical,easy
+What is a null pointer?,technical,technical,easy
+What is a variable?,technical,technical,easy
+What is a function vs a method?,technical,technical,easy
+What is a loop and name three types?,technical,technical,easy
+What is the difference between pass by value and pass by reference?,technical,technical,easy
+What is an interface in programming?,technical,technical,easy
+What is a database index?,technical,technical,easy
+What is a foreign key?,technical,technical,easy
+What is a primary key?,technical,technical,easy
+What is the difference between GET and POST?,technical,technical,easy
+What is JSON?,technical,technical,easy
+What is an API?,technical,technical,easy
+What is the difference between synchronous and asynchronous code?,technical,technical,easy
+What is a thread?,technical,technical,easy
+What is a boolean?,technical,technical,easy
+What is a conditional statement?,technical,technical,easy
+What is a merge sort?,technical,technical,easy
+What is bubble sort?,technical,technical,easy
+What is a tree data structure?,technical,technical,easy
+What is a graph?,technical,technical,easy
+What is a queue vs a stack?,technical,technical,easy
+What is the purpose of a constructor?,technical,technical,easy
+What is an exception?,technical,technical,easy
+What is try-catch used for?,technical,technical,easy
+What is a static method?,technical,technical,easy
+What is the difference between == and .equals() in Java?,technical,technical,easy
+What is the difference between i++ and ++i?,technical,technical,easy
+What is a module in programming?,technical,technical,easy
+What is the difference between mutable and immutable?,technical,technical,easy
+Tell me about yourself as a developer.,technical,technical,behavioral
+Why do you want to be a software engineer?,technical,technical,behavioral
+What programming languages are you comfortable with?,technical,technical,behavioral
+Describe a project you are proud of.,technical,technical,behavioral
+How do you keep your technical skills updated?,technical,technical,behavioral
+How do you approach learning a new programming language?,technical,technical,behavioral
+Describe your experience with collaborative coding.,technical,technical,behavioral
+How do you handle code reviews?,technical,technical,behavioral
+What is your favorite programming language and why?,technical,technical,behavioral
+How do you test your code?,technical,technical,behavioral
+How do you handle repetitive coding tasks?,technical,technical,behavioral
+What do you do when you get stuck on a bug?,technical,technical,behavioral
+How does garbage collection work?,technical,technical,medium
+Explain dynamic programming.,technical,technical,medium
+What is the difference between a process and a thread?,technical,technical,medium
+How does a hash map handle collisions?,technical,technical,medium
+What is the time complexity of quicksort?,technical,technical,medium
+Explain the difference between BFS and DFS.,technical,technical,medium
+What is a deadlock?,technical,technical,medium
+What is the CAP theorem?,technical,technical,medium
+What is dependency injection?,technical,technical,medium
+Explain SOLID principles.,technical,technical,medium
+What is memoization?,technical,technical,medium
+How does indexing improve database performance?,technical,technical,medium
+What is a binary tree traversal?,technical,technical,medium
+What is a design pattern? Name three.,technical,technical,medium
+Explain the Observer pattern.,technical,technical,medium
+What is the Factory pattern?,technical,technical,medium
+What is the Singleton pattern and its drawbacks?,technical,technical,medium
+What is a race condition?,technical,technical,medium
+What is a semaphore?,technical,technical,medium
+What is a mutex?,technical,technical,medium
+How would you design a URL shortener?,technical,technical,medium
+What is the difference between TCP and UDP?,technical,technical,medium
+What is a microservices architecture?,technical,technical,medium
+What is Docker?,technical,technical,medium
+What is CI/CD?,technical,technical,medium
+What is an ORM?,technical,technical,medium
+What is database normalization?,technical,technical,medium
+What is the N+1 query problem?,technical,technical,medium
+What is eventual consistency?,technical,technical,medium
+How does HTTPS work?,technical,technical,medium
+What is OAuth?,technical,technical,medium
+What is JWT?,technical,technical,medium
+What is the difference between authentication and authorization?,technical,technical,medium
+What is a RESTful API? What are its constraints?,technical,technical,medium
+What is GraphQL?,technical,technical,medium
+What is WebSocket?,technical,technical,medium
+What is a heap data structure?,technical,technical,medium
+What is the difference between a min-heap and max-heap?,technical,technical,medium
+How do you detect a cycle in a linked list?,technical,technical,medium
+How do you reverse a linked list?,technical,technical,medium
+What is tail recursion?,technical,technical,medium
+What is the difference between deep copy and shallow copy?,technical,technical,medium
+What is a closure in programming?,technical,technical,medium
+What is a lambda function?,technical,technical,medium
+What is functional programming?,technical,technical,medium
+What is immutability and why does it matter?,technical,technical,medium
+What is the difference between concurrency and parallelism?,technical,technical,medium
+What is a promise in JavaScript?,technical,technical,medium
+What is async/await?,technical,technical,medium
+What is event-driven programming?,technical,technical,medium
+Tell me about a time you debugged a difficult bug.,technical,technical,behavioral
+Describe a disagreement with a teammate on technical approach.,technical,technical,behavioral
+How do you handle technical debt?,technical,technical,behavioral
+Tell me about learning a new technology quickly.,technical,technical,behavioral
+How do you prioritize tasks when you have multiple deadlines?,technical,technical,behavioral
+Describe a time you improved a codebase significantly.,technical,technical,behavioral
+How do you approach estimating task complexity?,technical,technical,behavioral
+Describe a time you had to refactor legacy code.,technical,technical,behavioral
+How do you ensure code quality in a team environment?,technical,technical,behavioral
+Tell me about a failed project. What did you learn?,technical,technical,behavioral
+Describe a time you went above and beyond on a technical task.,technical,technical,behavioral
+How do you approach documentation?,technical,technical,behavioral
+Design a distributed message queue like Kafka.,technical,technical,hard
+How would you implement a rate limiter?,technical,technical,hard
+Explain consistent hashing.,technical,technical,hard
+How do you design a system handling 1M requests per second?,technical,technical,hard
+What is the difference between optimistic and pessimistic locking?,technical,technical,hard
+How would you implement a distributed cache?,technical,technical,hard
+Explain the actor model in concurrent programming.,technical,technical,hard
+Design a real-time collaborative document editor.,technical,technical,hard
+How would you implement a garbage collector?,technical,technical,hard
+What is Byzantine fault tolerance?,technical,technical,hard
+How does a B-tree differ from a B+ tree?,technical,technical,hard
+Design a global content delivery network.,technical,technical,hard
+How would you detect a cycle in a directed graph efficiently?,technical,technical,hard
+What is strong vs eventual consistency?,technical,technical,hard
+How would you design a distributed transaction system?,technical,technical,hard
+What is the Raft consensus algorithm?,technical,technical,hard
+How do you design idempotent APIs?,technical,technical,hard
+What is a bloom filter and when would you use it?,technical,technical,hard
+How do you implement a LRU cache?,technical,technical,hard
+How would you design a type-ahead search system?,technical,technical,hard
+What is a skip list?,technical,technical,hard
+How does a red-black tree maintain balance?,technical,technical,hard
+How would you design a distributed ID generator?,technical,technical,hard
+What is two-phase commit?,technical,technical,hard
+How do you handle split-brain in distributed systems?,technical,technical,hard
+What is a CRDTs and when are they used?,technical,technical,hard
+How would you build an in-memory database?,technical,technical,hard
+What is the difference between sharding and partitioning?,technical,technical,hard
+How do you implement backpressure in a streaming system?,technical,technical,hard
+What is a saga pattern in microservices?,technical,technical,hard
+How would you design a geospatial search system?,technical,technical,hard
+What is event sourcing?,technical,technical,hard
+What is CQRS?,technical,technical,hard
+How would you design a real-time bidding system?,technical,technical,hard
+How do you test distributed systems?,technical,technical,hard
+What is chaos engineering?,technical,technical,hard
+How do you perform a live migration of a database?,technical,technical,hard
+What is a write-ahead log?,technical,technical,hard
+How do you implement distributed tracing?,technical,technical,hard
+What is a service mesh?,technical,technical,hard
+Tell me about the most technically challenging project you built.,technical,technical,behavioral
+Describe leading a major architectural decision.,technical,technical,behavioral
+How have you improved engineering processes at a team level?,technical,technical,behavioral
+Tell me about a production incident you handled.,technical,technical,behavioral
+Describe mentoring a junior engineer through a complex problem.,technical,technical,behavioral
+How have you influenced technical strategy at an org level?,technical,technical,behavioral
+Tell me about a time you had to say no to a feature request.,technical,technical,behavioral
+Describe a time you balanced technical excellence with business deadlines.,technical,technical,behavioral
+How do you approach building for scale from day one?,technical,technical,behavioral
+Tell me about a time you introduced a new technology to your team.,technical,technical,behavioral
+Describe a time you had to advocate for better engineering practices.,technical,technical,behavioral
+How have you built psychological safety in an engineering team?,technical,technical,behavioral

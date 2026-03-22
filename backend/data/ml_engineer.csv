@@ -1,0 +1,187 @@
+question,role,category,difficulty
+What is machine learning?,ml_engineer,technical,easy
+What is the difference between supervised and unsupervised learning?,ml_engineer,technical,easy
+What is overfitting?,ml_engineer,technical,easy
+What is a neural network?,ml_engineer,technical,easy
+What is cross-validation?,ml_engineer,technical,easy
+What is accuracy and when is it not a good metric?,ml_engineer,technical,easy
+What is the difference between classification and regression?,ml_engineer,technical,easy
+What ML frameworks have you used?,ml_engineer,technical,easy
+Why do you want to be an ML engineer?,ml_engineer,technical,easy
+Tell me about an ML project you have built.,ml_engineer,technical,easy
+What is a training set and test set?,ml_engineer,technical,easy
+What is a feature in ML?,ml_engineer,technical,easy
+What is a confusion matrix?,ml_engineer,technical,easy
+What is a loss function?,ml_engineer,technical,easy
+How do you stay updated on ML research?,ml_engineer,technical,easy
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,easy
+How do you stay updated in the ml engineer field?,ml_engineer,technical,easy
+What tools does a ml engineer use daily?,ml_engineer,technical,easy
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,easy
+How do you measure success as a ml engineer?,ml_engineer,technical,easy
+What certifications are valuable for a ml engineer?,ml_engineer,technical,easy
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,easy
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,easy
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,easy
+What does great performance look like for a ml engineer?,ml_engineer,technical,easy
+How do you approach professional development as a ml engineer?,ml_engineer,technical,easy
+What industry trends should a ml engineer know about?,ml_engineer,technical,easy
+How do you build credibility as a ml engineer?,ml_engineer,technical,easy
+What are the common mistakes new ml engineers make?,ml_engineer,technical,easy
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,easy
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,easy
+How do you stay updated in the ml engineer field?,ml_engineer,technical,easy
+What tools does a ml engineer use daily?,ml_engineer,technical,easy
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,easy
+How do you measure success as a ml engineer?,ml_engineer,technical,easy
+What certifications are valuable for a ml engineer?,ml_engineer,technical,easy
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,easy
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,easy
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,easy
+What does great performance look like for a ml engineer?,ml_engineer,technical,easy
+How do you approach professional development as a ml engineer?,ml_engineer,technical,easy
+What industry trends should a ml engineer know about?,ml_engineer,technical,easy
+How do you build credibility as a ml engineer?,ml_engineer,technical,easy
+What are the common mistakes new ml engineers make?,ml_engineer,technical,easy
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,easy
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,easy
+How do you stay updated in the ml engineer field?,ml_engineer,technical,easy
+What tools does a ml engineer use daily?,ml_engineer,technical,easy
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,easy
+How do you measure success as a ml engineer?,ml_engineer,technical,easy
+What certifications are valuable for a ml engineer?,ml_engineer,technical,easy
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,easy
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,easy
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,easy
+What does great performance look like for a ml engineer?,ml_engineer,technical,easy
+How do you approach professional development as a ml engineer?,ml_engineer,technical,easy
+What industry trends should a ml engineer know about?,ml_engineer,technical,easy
+How do you build credibility as a ml engineer?,ml_engineer,technical,easy
+What are the common mistakes new ml engineers make?,ml_engineer,technical,easy
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,easy
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,easy
+How do you stay updated in the ml engineer field?,ml_engineer,technical,easy
+What is the bias-variance tradeoff?,ml_engineer,technical,medium
+How do you handle imbalanced datasets?,ml_engineer,technical,medium
+What is gradient descent?,ml_engineer,technical,medium
+What is regularization?,ml_engineer,technical,medium
+What is the difference between bagging and boosting?,ml_engineer,technical,medium
+How do you deploy an ML model to production?,ml_engineer,technical,medium
+What is data drift?,ml_engineer,technical,medium
+What is transfer learning?,ml_engineer,technical,medium
+What is feature engineering?,ml_engineer,technical,medium
+How do you evaluate a classification model?,ml_engineer,technical,medium
+Tell me about a time your model underperformed in production.,ml_engineer,technical,medium
+How do you collaborate with data scientists?,ml_engineer,technical,medium
+How would you build an ML pipeline from data ingestion to deployment?,ml_engineer,technical,medium
+How would you diagnose a model that works in testing but fails in production?,ml_engineer,technical,medium
+How would you build a recommendation system?,ml_engineer,technical,medium
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,medium
+How do you stay updated in the ml engineer field?,ml_engineer,technical,medium
+What tools does a ml engineer use daily?,ml_engineer,technical,medium
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,medium
+How do you measure success as a ml engineer?,ml_engineer,technical,medium
+What certifications are valuable for a ml engineer?,ml_engineer,technical,medium
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,medium
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,medium
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,medium
+What does great performance look like for a ml engineer?,ml_engineer,technical,medium
+How do you approach professional development as a ml engineer?,ml_engineer,technical,medium
+What industry trends should a ml engineer know about?,ml_engineer,technical,medium
+How do you build credibility as a ml engineer?,ml_engineer,technical,medium
+What are the common mistakes new ml engineers make?,ml_engineer,technical,medium
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,medium
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,medium
+How do you stay updated in the ml engineer field?,ml_engineer,technical,medium
+What tools does a ml engineer use daily?,ml_engineer,technical,medium
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,medium
+How do you measure success as a ml engineer?,ml_engineer,technical,medium
+What certifications are valuable for a ml engineer?,ml_engineer,technical,medium
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,medium
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,medium
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,medium
+What does great performance look like for a ml engineer?,ml_engineer,technical,medium
+How do you approach professional development as a ml engineer?,ml_engineer,technical,medium
+What industry trends should a ml engineer know about?,ml_engineer,technical,medium
+How do you build credibility as a ml engineer?,ml_engineer,technical,medium
+What are the common mistakes new ml engineers make?,ml_engineer,technical,medium
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,medium
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,medium
+How do you stay updated in the ml engineer field?,ml_engineer,technical,medium
+What tools does a ml engineer use daily?,ml_engineer,technical,medium
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,medium
+How do you measure success as a ml engineer?,ml_engineer,technical,medium
+What certifications are valuable for a ml engineer?,ml_engineer,technical,medium
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,medium
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,medium
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,medium
+What does great performance look like for a ml engineer?,ml_engineer,technical,medium
+How do you approach professional development as a ml engineer?,ml_engineer,technical,medium
+What industry trends should a ml engineer know about?,ml_engineer,technical,medium
+How do you build credibility as a ml engineer?,ml_engineer,technical,medium
+What are the common mistakes new ml engineers make?,ml_engineer,technical,medium
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,medium
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,medium
+How do you stay updated in the ml engineer field?,ml_engineer,technical,medium
+How do you implement attention mechanisms?,ml_engineer,technical,hard
+What is RLHF?,ml_engineer,technical,hard
+How do you build scalable ML serving infrastructure?,ml_engineer,technical,hard
+What is federated learning?,ml_engineer,technical,hard
+How do you implement a vector database for semantic search?,ml_engineer,technical,hard
+What is model quantization?,ml_engineer,technical,hard
+Describe the most complex ML system you have built.,ml_engineer,technical,hard
+Tell me about deploying a large-scale ML model.,ml_engineer,technical,hard
+How have you improved ML reliability in production?,ml_engineer,technical,hard
+How would you build a real-time fraud detection ML system?,ml_engineer,technical,hard
+How would you design an LLM-powered enterprise search?,ml_engineer,technical,hard
+A critical model's accuracy drops 15%. Walk me through your response.,ml_engineer,technical,hard
+How would you build an AutoML platform?,ml_engineer,technical,hard
+What is the difference between online and offline learning?,ml_engineer,technical,hard
+How do you handle concept drift in production ML?,ml_engineer,technical,hard
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,hard
+How do you stay updated in the ml engineer field?,ml_engineer,technical,hard
+What tools does a ml engineer use daily?,ml_engineer,technical,hard
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,hard
+How do you measure success as a ml engineer?,ml_engineer,technical,hard
+What certifications are valuable for a ml engineer?,ml_engineer,technical,hard
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,hard
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,hard
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,hard
+What does great performance look like for a ml engineer?,ml_engineer,technical,hard
+How do you approach professional development as a ml engineer?,ml_engineer,technical,hard
+What industry trends should a ml engineer know about?,ml_engineer,technical,hard
+How do you build credibility as a ml engineer?,ml_engineer,technical,hard
+What are the common mistakes new ml engineers make?,ml_engineer,technical,hard
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,hard
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,hard
+How do you stay updated in the ml engineer field?,ml_engineer,technical,hard
+What tools does a ml engineer use daily?,ml_engineer,technical,hard
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,hard
+How do you measure success as a ml engineer?,ml_engineer,technical,hard
+What certifications are valuable for a ml engineer?,ml_engineer,technical,hard
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,hard
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,hard
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,hard
+What does great performance look like for a ml engineer?,ml_engineer,technical,hard
+How do you approach professional development as a ml engineer?,ml_engineer,technical,hard
+What industry trends should a ml engineer know about?,ml_engineer,technical,hard
+How do you build credibility as a ml engineer?,ml_engineer,technical,hard
+What are the common mistakes new ml engineers make?,ml_engineer,technical,hard
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,hard
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,hard
+How do you stay updated in the ml engineer field?,ml_engineer,technical,hard
+What tools does a ml engineer use daily?,ml_engineer,technical,hard
+What are the biggest challenges facing ml engineers today?,ml_engineer,technical,hard
+How do you measure success as a ml engineer?,ml_engineer,technical,hard
+What certifications are valuable for a ml engineer?,ml_engineer,technical,hard
+How does a ml engineer collaborate with other teams?,ml_engineer,technical,hard
+What is your approach to continuous improvement as a ml engineer?,ml_engineer,technical,hard
+How do you handle competing priorities as a ml engineer?,ml_engineer,technical,hard
+What does great performance look like for a ml engineer?,ml_engineer,technical,hard
+How do you approach professional development as a ml engineer?,ml_engineer,technical,hard
+What industry trends should a ml engineer know about?,ml_engineer,technical,hard
+How do you build credibility as a ml engineer?,ml_engineer,technical,hard
+What are the common mistakes new ml engineers make?,ml_engineer,technical,hard
+How do you demonstrate value as a ml engineer?,ml_engineer,technical,hard
+What are the key responsibilities of a ml engineer?,ml_engineer,technical,hard
+How do you stay updated in the ml engineer field?,ml_engineer,technical,hard

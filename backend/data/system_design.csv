@@ -1,0 +1,173 @@
+question,role,category,difficulty
+What is scalability?,system_design,technical,easy
+What is vertical vs horizontal scaling?,system_design,technical,easy
+What is a load balancer?,system_design,technical,easy
+What is a CDN?,system_design,technical,easy
+What is caching?,system_design,technical,easy
+What is the difference between SQL and NoSQL?,system_design,technical,easy
+What is an API gateway?,system_design,technical,easy
+What is a microservices architecture?,system_design,technical,easy
+What is a message queue?,system_design,technical,easy
+What is stateful vs stateless?,system_design,technical,easy
+What is a single point of failure?,system_design,technical,easy
+What is database sharding?,system_design,technical,easy
+What is replication?,system_design,technical,easy
+What is a reverse proxy?,system_design,technical,easy
+What is throughput?,system_design,technical,easy
+What is latency?,system_design,technical,easy
+What is availability?,system_design,technical,easy
+What is durability in databases?,system_design,technical,easy
+What is a data center?,system_design,technical,easy
+What is a firewall?,system_design,technical,easy
+What is DNS?,system_design,technical,easy
+What is a virtual machine?,system_design,technical,easy
+What is containerization?,system_design,technical,easy
+What is a health check?,system_design,technical,easy
+What is a circuit breaker pattern?,system_design,technical,easy
+What is rate limiting?,system_design,technical,easy
+What is a webhook?,system_design,technical,easy
+What is an SLA?,system_design,technical,easy
+What is RPO and RTO?,system_design,technical,easy
+What is a disaster recovery plan?,system_design,technical,easy
+What is a blob store?,system_design,technical,easy
+What is a relational database?,system_design,technical,easy
+What is eventual consistency?,system_design,technical,easy
+What is idempotency?,system_design,technical,easy
+What is a REST API?,system_design,technical,easy
+Why do you want to specialize in system design?,system_design,technical,behavioral
+Tell me about a system you have designed.,system_design,technical,behavioral
+How do you approach designing a new system?,system_design,technical,behavioral
+What is your process when you receive a vague system requirement?,system_design,technical,behavioral
+How do you balance simplicity and scalability?,system_design,technical,behavioral
+How do you communicate design decisions to stakeholders?,system_design,technical,behavioral
+Describe a time you had to redesign a system.,system_design,technical,behavioral
+How do you stay updated on system design best practices?,system_design,technical,behavioral
+Tell me about a time you identified a bottleneck.,system_design,technical,behavioral
+How do you make tradeoff decisions in design?,system_design,technical,behavioral
+What is your approach to back-of-envelope calculations?,system_design,technical,behavioral
+How do you document a system design?,system_design,technical,behavioral
+Tell me about working with infrastructure teams.,system_design,technical,behavioral
+How do you validate a system design before building?,system_design,technical,behavioral
+How do you handle disagreements on architectural choices?,system_design,technical,behavioral
+What is capacity planning?,system_design,technical,easy
+What is an event-driven architecture?,system_design,technical,easy
+What is a batch processing system?,system_design,technical,easy
+What is a streaming processing system?,system_design,technical,easy
+What is the difference between synchronous and asynchronous communication?,system_design,technical,easy
+What is an on-premise vs cloud deployment?,system_design,technical,easy
+What is a hybrid cloud?,system_design,technical,easy
+What is auto-scaling?,system_design,technical,easy
+How would you design a URL shortener?,system_design,technical,medium
+Design a notification system.,system_design,technical,medium
+How would you design a ride-sharing app?,system_design,technical,medium
+What is the CAP theorem?,system_design,technical,medium
+How would you design a rate limiter?,system_design,technical,medium
+How does consistent hashing work?,system_design,technical,medium
+How would you design an e-commerce product search?,system_design,technical,medium
+How would you design a real-time chat system?,system_design,technical,medium
+What is the difference between push and pull architecture?,system_design,technical,medium
+How would you design a leaderboard?,system_design,technical,medium
+How would you design a job scheduler?,system_design,technical,medium
+How would you design a key-value store?,system_design,technical,medium
+How would you handle a 10x traffic spike?,system_design,technical,medium
+How would you design a hotel booking system?,system_design,technical,medium
+How would you design an online auction system?,system_design,technical,medium
+How would you design a social media feed?,system_design,technical,medium
+How would you design a logging system?,system_design,technical,medium
+How would you design a ticket booking system?,system_design,technical,medium
+How would you design a content moderation system?,system_design,technical,medium
+How would you design a distributed cache?,system_design,technical,medium
+What is database denormalization and when is it useful?,system_design,technical,medium
+How do you implement pagination at scale?,system_design,technical,medium
+What is write-through vs write-behind caching?,system_design,technical,medium
+How do you handle session management at scale?,system_design,technical,medium
+What is a saga pattern?,system_design,technical,medium
+How would you implement full-text search?,system_design,technical,medium
+How do you design for multi-tenancy?,system_design,technical,medium
+How do you implement API versioning?,system_design,technical,medium
+What is a data pipeline?,system_design,technical,medium
+How would you design a metrics collection system?,system_design,technical,medium
+Tell me about a time you identified a scalability bottleneck.,system_design,technical,behavioral
+How do you make tradeoffs in system design?,system_design,technical,behavioral
+Describe a time you redesigned a system for performance.,system_design,technical,behavioral
+How would you handle a 10x traffic increase overnight?,system_design,technical,situational
+How would you design a leaderboard for 10M users?,system_design,technical,situational
+How would you migrate a monolith to microservices?,system_design,technical,situational
+How would you reduce database load by 50%?,system_design,technical,situational
+How would you design a system for real-time analytics?,system_design,technical,situational
+How would you handle database schema migration at scale?,system_design,technical,situational
+How would you implement distributed locking?,system_design,technical,situational
+How do you ensure data consistency across microservices?,system_design,technical,medium
+What is the outbox pattern?,system_design,technical,medium
+What is a fan-out architecture?,system_design,technical,medium
+What is a read replica and when do you use it?,system_design,technical,medium
+How do you design a search autocomplete system?,system_design,technical,medium
+How do you scale a SQL database?,system_design,technical,medium
+What is connection pooling?,system_design,technical,medium
+What is a CDN cache invalidation strategy?,system_design,technical,medium
+How do you implement distributed transactions?,system_design,technical,medium
+How would you design a flash sale system?,system_design,technical,medium
+How would you design an email delivery system?,system_design,technical,medium
+How would you design a file upload system?,system_design,technical,medium
+How do you implement idempotency in APIs?,system_design,technical,medium
+What is a service registry?,system_design,technical,medium
+What is a sidecar pattern?,system_design,technical,medium
+How do you design for observability?,system_design,technical,medium
+What is blue-green deployment?,system_design,technical,medium
+What is a canary deployment?,system_design,technical,medium
+How would you design a coupon system?,system_design,technical,medium
+How would you design a subscription billing system?,system_design,technical,medium
+How would you design a multi-region database?,system_design,technical,medium
+How would you design a real-time stock price system?,system_design,technical,medium
+Design Twitter's trending topics.,system_design,technical,hard
+Design Google Drive.,system_design,technical,hard
+Design YouTube's video processing pipeline.,system_design,technical,hard
+Design a global distributed database with strong consistency.,system_design,technical,hard
+Design a real-time analytics dashboard for 10M users.,system_design,technical,hard
+Design a recommendation system for Netflix.,system_design,technical,hard
+Design a payment processing system.,system_design,technical,hard
+Design a search engine like Google.,system_design,technical,hard
+Design multi-region deployment with zero downtime.,system_design,technical,hard
+Design a distributed locking service.,system_design,technical,hard
+Design Instagram's photo sharing system.,system_design,technical,hard
+Design Uber's dispatch system.,system_design,technical,hard
+Design WhatsApp's messaging system.,system_design,technical,hard
+Design Airbnb's booking system.,system_design,technical,hard
+Design Amazon's shopping cart.,system_design,technical,hard
+Design a global DNS system.,system_design,technical,hard
+Design a stock exchange trading system.,system_design,technical,hard
+Design a live video streaming platform.,system_design,technical,hard
+Design a global chat application for 1 billion users.,system_design,technical,hard
+Design a web crawler.,system_design,technical,hard
+Design a code deployment system.,system_design,technical,hard
+Design a distributed job scheduler at Google scale.,system_design,technical,hard
+Design a fraud detection system.,system_design,technical,hard
+Design a proximity service like Yelp.,system_design,technical,hard
+Design a digital wallet system.,system_design,technical,hard
+Design a news feed system.,system_design,technical,hard
+Design a cloud storage system like S3.,system_design,technical,hard
+Design a ride-sharing matching algorithm.,system_design,technical,hard
+Design a distributed metrics and alerting system.,system_design,technical,hard
+Design a multi-player online game server.,system_design,technical,hard
+Tell me about the most complex system you have designed.,system_design,technical,behavioral
+How have you influenced architectural decisions at org level?,system_design,technical,behavioral
+Describe a system design failure you learned from.,system_design,technical,behavioral
+How would you design for a startup scaling 0 to 10M users?,system_design,technical,situational
+A system is failing under Black Friday load. Walk me through.,system_design,technical,situational
+How would you design a system with 99.999% availability?,system_design,technical,situational
+How would you redesign a legacy monolith to cloud-native?,system_design,technical,situational
+You need to reduce infrastructure costs by 40%. How?,system_design,technical,situational
+How would you design a GDPR-compliant data system?,system_design,technical,situational
+How would you build a multi-cloud architecture?,system_design,technical,situational
+What is the Raft consensus algorithm?,system_design,technical,hard
+What is Paxos?,system_design,technical,hard
+What is a vector clock?,system_design,technical,hard
+What is a Merkle tree?,system_design,technical,hard
+How do you implement a distributed transaction with 2PC?,system_design,technical,hard
+What is the difference between leader election algorithms?,system_design,technical,hard
+How do you design a geo-distributed system with low latency?,system_design,technical,hard
+What is a write-ahead log?,system_design,technical,hard
+How do you implement change data capture?,system_design,technical,hard
+How do you design a system for exactly-once delivery?,system_design,technical,hard
+How do you design a petabyte-scale data warehouse?,system_design,technical,hard
+How do you build a self-healing distributed system?,system_design,technical,hard

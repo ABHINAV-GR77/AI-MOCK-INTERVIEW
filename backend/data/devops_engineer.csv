@@ -1,0 +1,187 @@
+question,role,category,difficulty
+What is DevOps?,devops_engineer,technical,easy
+What is CI/CD?,devops_engineer,technical,easy
+What is Docker?,devops_engineer,technical,easy
+What is Kubernetes?,devops_engineer,technical,easy
+What is infrastructure as code?,devops_engineer,technical,easy
+What is a load balancer?,devops_engineer,technical,easy
+What is monitoring in DevOps?,devops_engineer,technical,easy
+What is Git?,devops_engineer,technical,easy
+What cloud platforms have you worked with?,devops_engineer,technical,easy
+Why do you want to be a DevOps engineer?,devops_engineer,technical,easy
+Tell me about a pipeline you built or improved.,devops_engineer,technical,easy
+How do you handle an outage?,devops_engineer,technical,easy
+What is a blue-green deployment?,devops_engineer,technical,easy
+What is a canary release?,devops_engineer,technical,easy
+What is the difference between continuous integration and deployment?,devops_engineer,technical,easy
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,easy
+How do you stay updated in the devops engineer field?,devops_engineer,technical,easy
+What tools does a devops engineer use daily?,devops_engineer,technical,easy
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,easy
+How do you measure success as a devops engineer?,devops_engineer,technical,easy
+What certifications are valuable for a devops engineer?,devops_engineer,technical,easy
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,easy
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,easy
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,easy
+What does great performance look like for a devops engineer?,devops_engineer,technical,easy
+How do you approach professional development as a devops engineer?,devops_engineer,technical,easy
+What industry trends should a devops engineer know about?,devops_engineer,technical,easy
+How do you build credibility as a devops engineer?,devops_engineer,technical,easy
+What are the common mistakes new devops engineers make?,devops_engineer,technical,easy
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,easy
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,easy
+How do you stay updated in the devops engineer field?,devops_engineer,technical,easy
+What tools does a devops engineer use daily?,devops_engineer,technical,easy
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,easy
+How do you measure success as a devops engineer?,devops_engineer,technical,easy
+What certifications are valuable for a devops engineer?,devops_engineer,technical,easy
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,easy
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,easy
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,easy
+What does great performance look like for a devops engineer?,devops_engineer,technical,easy
+How do you approach professional development as a devops engineer?,devops_engineer,technical,easy
+What industry trends should a devops engineer know about?,devops_engineer,technical,easy
+How do you build credibility as a devops engineer?,devops_engineer,technical,easy
+What are the common mistakes new devops engineers make?,devops_engineer,technical,easy
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,easy
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,easy
+How do you stay updated in the devops engineer field?,devops_engineer,technical,easy
+What tools does a devops engineer use daily?,devops_engineer,technical,easy
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,easy
+How do you measure success as a devops engineer?,devops_engineer,technical,easy
+What certifications are valuable for a devops engineer?,devops_engineer,technical,easy
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,easy
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,easy
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,easy
+What does great performance look like for a devops engineer?,devops_engineer,technical,easy
+How do you approach professional development as a devops engineer?,devops_engineer,technical,easy
+What industry trends should a devops engineer know about?,devops_engineer,technical,easy
+How do you build credibility as a devops engineer?,devops_engineer,technical,easy
+What are the common mistakes new devops engineers make?,devops_engineer,technical,easy
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,easy
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,easy
+How do you stay updated in the devops engineer field?,devops_engineer,technical,easy
+How does Kubernetes manage containers?,devops_engineer,technical,medium
+What is Terraform?,devops_engineer,technical,medium
+How do you implement secrets management?,devops_engineer,technical,medium
+What is observability vs monitoring?,devops_engineer,technical,medium
+How do you handle configuration management?,devops_engineer,technical,medium
+What is a service mesh?,devops_engineer,technical,medium
+How do you secure a CI/CD pipeline?,devops_engineer,technical,medium
+What is the 12-factor app?,devops_engineer,technical,medium
+How do you implement auto-scaling?,devops_engineer,technical,medium
+Tell me about a time you reduced deployment time significantly.,devops_engineer,technical,medium
+Describe a major production incident you resolved.,devops_engineer,technical,medium
+How do you collaborate with development teams?,devops_engineer,technical,medium
+A deployment causes an outage. Walk me through your response.,devops_engineer,technical,medium
+How would you migrate a monolith to microservices?,devops_engineer,technical,medium
+How would you reduce cloud costs by 30%?,devops_engineer,technical,medium
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,medium
+How do you stay updated in the devops engineer field?,devops_engineer,technical,medium
+What tools does a devops engineer use daily?,devops_engineer,technical,medium
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,medium
+How do you measure success as a devops engineer?,devops_engineer,technical,medium
+What certifications are valuable for a devops engineer?,devops_engineer,technical,medium
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,medium
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,medium
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,medium
+What does great performance look like for a devops engineer?,devops_engineer,technical,medium
+How do you approach professional development as a devops engineer?,devops_engineer,technical,medium
+What industry trends should a devops engineer know about?,devops_engineer,technical,medium
+How do you build credibility as a devops engineer?,devops_engineer,technical,medium
+What are the common mistakes new devops engineers make?,devops_engineer,technical,medium
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,medium
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,medium
+How do you stay updated in the devops engineer field?,devops_engineer,technical,medium
+What tools does a devops engineer use daily?,devops_engineer,technical,medium
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,medium
+How do you measure success as a devops engineer?,devops_engineer,technical,medium
+What certifications are valuable for a devops engineer?,devops_engineer,technical,medium
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,medium
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,medium
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,medium
+What does great performance look like for a devops engineer?,devops_engineer,technical,medium
+How do you approach professional development as a devops engineer?,devops_engineer,technical,medium
+What industry trends should a devops engineer know about?,devops_engineer,technical,medium
+How do you build credibility as a devops engineer?,devops_engineer,technical,medium
+What are the common mistakes new devops engineers make?,devops_engineer,technical,medium
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,medium
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,medium
+How do you stay updated in the devops engineer field?,devops_engineer,technical,medium
+What tools does a devops engineer use daily?,devops_engineer,technical,medium
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,medium
+How do you measure success as a devops engineer?,devops_engineer,technical,medium
+What certifications are valuable for a devops engineer?,devops_engineer,technical,medium
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,medium
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,medium
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,medium
+What does great performance look like for a devops engineer?,devops_engineer,technical,medium
+How do you approach professional development as a devops engineer?,devops_engineer,technical,medium
+What industry trends should a devops engineer know about?,devops_engineer,technical,medium
+How do you build credibility as a devops engineer?,devops_engineer,technical,medium
+What are the common mistakes new devops engineers make?,devops_engineer,technical,medium
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,medium
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,medium
+How do you stay updated in the devops engineer field?,devops_engineer,technical,medium
+How do you design zero-downtime deployment?,devops_engineer,technical,hard
+What is GitOps?,devops_engineer,technical,hard
+How do you design multi-region highly available infrastructure?,devops_engineer,technical,hard
+What is chaos engineering?,devops_engineer,technical,hard
+How do you implement a service mesh at scale?,devops_engineer,technical,hard
+How do you build a platform engineering team?,devops_engineer,technical,hard
+Describe the most complex infrastructure you have designed.,devops_engineer,technical,hard
+Tell me about a major infrastructure migration you led.,devops_engineer,technical,hard
+How have you improved system reliability?,devops_engineer,technical,hard
+How would you design infrastructure for 1M requests/second?,devops_engineer,technical,hard
+A Kubernetes cluster is degrading under load. Diagnose it.,devops_engineer,technical,hard
+How would you build a self-service developer platform?,devops_engineer,technical,hard
+How would you implement zero-trust security?,devops_engineer,technical,hard
+What is eBPF and how is it used in DevOps?,devops_engineer,technical,hard
+How do you implement SLOs and error budgets?,devops_engineer,technical,hard
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,hard
+How do you stay updated in the devops engineer field?,devops_engineer,technical,hard
+What tools does a devops engineer use daily?,devops_engineer,technical,hard
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,hard
+How do you measure success as a devops engineer?,devops_engineer,technical,hard
+What certifications are valuable for a devops engineer?,devops_engineer,technical,hard
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,hard
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,hard
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,hard
+What does great performance look like for a devops engineer?,devops_engineer,technical,hard
+How do you approach professional development as a devops engineer?,devops_engineer,technical,hard
+What industry trends should a devops engineer know about?,devops_engineer,technical,hard
+How do you build credibility as a devops engineer?,devops_engineer,technical,hard
+What are the common mistakes new devops engineers make?,devops_engineer,technical,hard
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,hard
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,hard
+How do you stay updated in the devops engineer field?,devops_engineer,technical,hard
+What tools does a devops engineer use daily?,devops_engineer,technical,hard
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,hard
+How do you measure success as a devops engineer?,devops_engineer,technical,hard
+What certifications are valuable for a devops engineer?,devops_engineer,technical,hard
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,hard
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,hard
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,hard
+What does great performance look like for a devops engineer?,devops_engineer,technical,hard
+How do you approach professional development as a devops engineer?,devops_engineer,technical,hard
+What industry trends should a devops engineer know about?,devops_engineer,technical,hard
+How do you build credibility as a devops engineer?,devops_engineer,technical,hard
+What are the common mistakes new devops engineers make?,devops_engineer,technical,hard
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,hard
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,hard
+How do you stay updated in the devops engineer field?,devops_engineer,technical,hard
+What tools does a devops engineer use daily?,devops_engineer,technical,hard
+What are the biggest challenges facing devops engineers today?,devops_engineer,technical,hard
+How do you measure success as a devops engineer?,devops_engineer,technical,hard
+What certifications are valuable for a devops engineer?,devops_engineer,technical,hard
+How does a devops engineer collaborate with other teams?,devops_engineer,technical,hard
+What is your approach to continuous improvement as a devops engineer?,devops_engineer,technical,hard
+How do you handle competing priorities as a devops engineer?,devops_engineer,technical,hard
+What does great performance look like for a devops engineer?,devops_engineer,technical,hard
+How do you approach professional development as a devops engineer?,devops_engineer,technical,hard
+What industry trends should a devops engineer know about?,devops_engineer,technical,hard
+How do you build credibility as a devops engineer?,devops_engineer,technical,hard
+What are the common mistakes new devops engineers make?,devops_engineer,technical,hard
+How do you demonstrate value as a devops engineer?,devops_engineer,technical,hard
+What are the key responsibilities of a devops engineer?,devops_engineer,technical,hard
+How do you stay updated in the devops engineer field?,devops_engineer,technical,hard

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="/static/favicon.png"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InterviewAI — AI Chat</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config={theme:{extend:{colors:{accent:'#00e5ff',accent2:'#7b61ff',accent3:'#ff4d6d',success:'#00e676',surface:'#0d1117',bg:'#060a0f',border:'#1f2937',muted:'#6b7280'},fontFamily:{grotesk:['Space Grotesk','sans-serif'],mono:['DM Mono','monospace']}}}}</script>
+  <style>
+    @keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes pulseDot{0%,100%{box-shadow:0 0 0 0 rgba(0,230,118,0.5)}70%{box-shadow:0 0 0 6px rgba(0,230,118,0)}}
+    @keyframes blink{0%,100%{opacity:1}50%{opacity:0}}
+    .sidebar{width:64px;transition:width 0.3s cubic-bezier(0.4,0,0.2,1);overflow:hidden}
+    .sidebar:hover{width:240px;box-shadow:4px 0 40px rgba(0,0,0,0.6)}
+    .sidebar-inner{min-width:240px}
+    .nav-txt,.sb-label,.sb-brand-txt,.sb-status-txt{opacity:0;transition:opacity 0.15s;white-space:nowrap}
+    .sidebar:hover .nav-txt,.sidebar:hover .sb-label,.sidebar:hover .sb-brand-txt,.sidebar:hover .sb-status-txt{opacity:1;transition:opacity 0.2s ease 0.1s}
+    .pulse-dot{width:7px;height:7px;background:#00e676;border-radius:50%;flex-shrink:0;animation:pulseDot 2s infinite}
+    .msg{animation:fadeUp 0.2s ease both}
+    .prose p{margin:6px 0;line-height:1.75;font-size:14px;color:#d1d5db}
+    .prose h1,.prose h2,.prose h3{font-family:'Space Grotesk',sans-serif;font-weight:700;color:#fff;margin:14px 0 6px}
+    .prose h1{font-size:17px}.prose h2{font-size:15px}.prose h3{font-size:14px}
+    .prose ul,.prose ol{margin:8px 0 8px 20px;font-size:14px;line-height:1.75;color:#d1d5db}
+    .prose li{margin:4px 0}
+    .prose strong{color:#fff;font-weight:700}
+    .prose code{background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.15);border-radius:4px;padding:1px 6px;font-size:12px;color:#00e5ff;font-family:'DM Mono',monospace}
+    .prose pre{background:#0a0e14;border:1px solid #1f2937;border-radius:10px;padding:14px;overflow-x:auto;margin:10px 0}
+    .prose pre code{background:none;border:none;padding:0;color:#e5e7eb;font-size:13px}
+    .prose blockquote{border-left:3px solid #00e5ff;padding-left:12px;color:#9ca3af;font-style:italic;margin:8px 0}
+    .typing-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:#6b7280;animation:blink 1.2s infinite}
+    .typing-dot:nth-child(2){animation-delay:0.25s}
+    .typing-dot:nth-child(3){animation-delay:0.5s}
+    #chat-input:focus{border-color:rgba(0,229,255,0.3);box-shadow:0 0 0 3px rgba(0,229,255,0.06)}
+    .send-btn-active{background:linear-gradient(135deg,#00e5ff,#7b61ff)!important}
+    .send-btn-idle{background:#1f2937!important}
+  </style>
+</head>
+<body class="bg-bg text-white font-mono" style="background-image:linear-gradient(rgba(0,229,255,0.015) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,0.015) 1px,transparent 1px);background-size:48px 48px;">
+
+  <!-- Sidebar -->
+  <aside class="sidebar fixed left-0 top-0 bottom-0 bg-surface border-r border-border flex flex-col z-50">
+    <div class="sidebar-inner flex flex-col h-full py-4 px-3">
+      <a href="/dashboard" class="flex items-center gap-3 mb-6 px-1 no-underline">
+        <div class="w-9 h-9 rounded-xl flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#00e5ff22,#7b61ff22);border:1px solid #00e5ff33">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2.2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <span class="sb-brand-txt font-grotesk font-black text-base tracking-tight">Interview<span style="color:#00e5ff">AI</span></span>
+      </a>
+      <div class="sb-label text-xs tracking-widest uppercase px-2 mb-1 font-bold" style="color:#4b5563">Main</div>
+      <a href="/dashboard" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-muted hover:text-white hover:bg-white/5 text-sm mb-0.5 no-underline transition-all">
+        <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+        <span class="nav-txt">Dashboard</span>
+      </a>
+      <a href="/practice" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-muted hover:text-white hover:bg-white/5 text-sm mb-0.5 no-underline transition-all">
+        <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+        <span class="nav-txt">Practice</span>
+      </a>
+      <a href="/interview/voice" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-muted hover:text-white hover:bg-white/5 text-sm mb-0.5 no-underline transition-all">
+        <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+        <span class="nav-txt">Voice Interview</span>
+      </a>
+      <a href="/analytics" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-muted hover:text-white hover:bg-white/5 text-sm mb-0.5 no-underline transition-all">
+        <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        <span class="nav-txt">Analytics</span>
+      </a>
+      <a href="/study-guide" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-sm mb-0.5 no-underline transition-all" style="background:rgba(0,229,255,0.08);border:1px solid rgba(0,229,255,0.15);color:#00e5ff">
+        <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2 L13.5 8.5 L20 10 L13.5 11.5 L12 18 L10.5 11.5 L4 10 L10.5 8.5 Z" fill="currentColor" opacity="0.9"/><path d="M19 2 L19.8 4.2 L22 5 L19.8 5.8 L19 8 L18.2 5.8 L16 5 L18.2 4.2 Z" fill="currentColor" opacity="0.7"/><path d="M5 16 L5.6 17.4 L7 18 L5.6 18.6 L5 20 L4.4 18.6 L3 18 L4.4 17.4 Z" fill="currentColor" opacity="0.5"/></svg>
+        <span class="nav-txt font-bold">AI Chat</span>
+      </a>
+      <div class="sb-label text-xs tracking-widest uppercase px-2 mb-1 mt-4 font-bold" style="color:#4b5563">Resources</div>
+      <a href="/tips" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-muted hover:text-white hover:bg-white/5 text-sm mb-0.5 no-underline transition-all">
+        <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        <span class="nav-txt">Tips & Tricks</span>
+      </a>
+      <a href="/leaderboard" class="flex items-center gap-3 px-3 py-2.5 rounded-xl text-muted hover:text-white hover:bg-white/5 text-sm mb-0.5 no-underline transition-all">
+        <svg class="flex-shrink-0" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 21h8m-4-4v4M5 3H3v5a4 4 0 0 0 4 4h0m12-9h2v5a4 4 0 0 1-4 4h0M7 3h10l-1 9H8L7 3z"/></svg>
+        <span class="nav-txt">Leaderboard</span>
+      </a>
+      <div class="mt-auto pt-4 border-t border-border">
+        <div class="flex items-center gap-3 px-3 py-2 rounded-xl mb-2" style="background:rgba(0,230,118,0.06);border:1px solid rgba(0,230,118,0.15)">
+          <div class="pulse-dot"></div>
+          <span class="sb-status-txt text-xs font-bold" style="color:#00e676">AI Online</span>
+        </div>
+        
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main chat area -->
+  <main class="ml-16 flex flex-col" style="height:100vh">
+
+    <!-- Messages scroll area -->
+    <div id="chat-messages" class="flex-1 overflow-y-auto" style="scroll-behavior:smooth">
+
+      <!-- Empty state — shown until first message -->
+      <div id="empty-state" class="flex flex-col items-center justify-center h-full gap-6 px-8" style="padding-bottom:80px">
+        <div style="width:72px;height:72px;border-radius:24px;background:linear-gradient(135deg,rgba(0,229,255,0.1),rgba(123,97,255,0.1));border:1px solid rgba(0,229,255,0.2);display:flex;align-items:center;justify-content:center">
+          <svg width="40" height="40" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="12" y="20" width="40" height="32" rx="8" fill="none" stroke="#00e5ff" stroke-width="2.5"/>
+            <rect x="22" y="30" width="6" height="6" rx="2" fill="#00e5ff"/>
+            <rect x="36" y="30" width="6" height="6" rx="2" fill="#7b61ff"/>
+            <path d="M26 42 Q32 47 38 42" stroke="#00e5ff" stroke-width="2" stroke-linecap="round" fill="none"/>
+            <line x1="32" y1="20" x2="32" y2="13" stroke="#00e5ff" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="32" cy="10" r="3" fill="#7b61ff"/>
+            <line x1="12" y1="34" x2="6" y2="34" stroke="#00e5ff" stroke-width="2.5" stroke-linecap="round"/>
+            <line x1="52" y1="34" x2="58" y2="34" stroke="#7b61ff" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="text-center">
+          <h2 class="font-grotesk font-black text-2xl mb-2">How can I help you?</h2>
+          <p class="text-sm text-muted">Ask anything about interviews — concepts, answers, tips, or paste your answer for feedback.</p>
+        </div>
+        <!-- Suggestion grid -->
+        <div class="grid grid-cols-2 gap-3" style="max-width:520px;width:100%">
+          <button onclick="sendChip(this.dataset.q)" data-q="What is the STAR method and how do I use it?"
+            class="text-left p-4 rounded-2xl border border-border hover:border-accent/40 hover:bg-white/5 transition-all text-sm text-muted hover:text-white">
+            <div class="font-bold text-white mb-1 text-xs font-grotesk">STAR method</div>
+            What is it and how do I use it?
+          </button>
+          <button onclick="sendChip(this.dataset.q)" data-q="How do I answer 'Tell me about yourself'?"
+            class="text-left p-4 rounded-2xl border border-border hover:border-accent/40 hover:bg-white/5 transition-all text-sm text-muted hover:text-white">
+            <div class="font-bold text-white mb-1 text-xs font-grotesk">Tell me about yourself</div>
+            Best way to answer this
+          </button>
+          <button onclick="sendChip(this.dataset.q)" data-q="Ask me a technical interview question about data structures"
+            class="text-left p-4 rounded-2xl border border-border hover:border-accent/40 hover:bg-white/5 transition-all text-sm text-muted hover:text-white">
+            <div class="font-bold text-white mb-1 text-xs font-grotesk">Quiz me</div>
+            Ask me a technical question
+          </button>
+          <button onclick="sendChip(this.dataset.q)" data-q="What are the most common behavioral interview questions?"
+            class="text-left p-4 rounded-2xl border border-border hover:border-accent/40 hover:bg-white/5 transition-all text-sm text-muted hover:text-white">
+            <div class="font-bold text-white mb-1 text-xs font-grotesk">Behavioral questions</div>
+            Most common ones to prepare
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Input bar — fixed at bottom -->
+    <div class="flex-shrink-0 border-t border-border px-6 py-4" style="background:#060a0f">
+      <div style="max-width:720px;margin:0 auto">
+        <div class="flex items-end gap-3 rounded-2xl border border-border p-3 transition-all" style="background:#0d1117" id="input-wrap">
+          <textarea
+            id="chat-input"
+            placeholder="Ask anything about interviews..."
+            rows="1"
+            onkeydown="handleKey(event)"
+            oninput="autoResize(this)"
+            class="flex-1 bg-transparent text-sm text-white placeholder-muted resize-none outline-none"
+            style="max-height:120px;line-height:1.6;font-family:'DM Mono',monospace;min-height:24px"
+          ></textarea>
+          <button id="send-btn" onclick="sendMessage()"
+            class="flex-shrink-0 w-9 h-9 rounded-xl flex items-center justify-center transition-all send-btn-idle">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6b7280" stroke-width="2.5" id="send-icon"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+        </div>
+        <div class="text-center mt-2">
+          <span class="text-xs text-muted" style="font-family:'DM Mono',monospace">Enter to send · Shift+Enter for new line</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="/static/js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="/static/js/aichat.js"></script>
+</body>
+</html>

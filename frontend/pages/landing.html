@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <link rel="icon" type="image/png" href="/static/favicon.png"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InterviewAI — Ace Your Next Interview</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:#060a0f;height:100vh;overflow:hidden;display:flex;flex-direction:column;font-family:'DM Mono',monospace}
+    .grid-bg{position:fixed;inset:0;background-image:linear-gradient(rgba(0,229,255,0.025) 1px,transparent 1px),linear-gradient(90deg,rgba(0,229,255,0.025) 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+    .orb{position:fixed;border-radius:50%;filter:blur(120px);pointer-events:none}
+    @keyframes shimmer{0%{background-position:200% center}100%{background-position:-200% center}}
+    @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .a1{animation:fadeUp 0.6s ease 0.05s both}
+    .a2{animation:fadeUp 0.6s ease 0.2s both}
+    .a3{animation:fadeUp 0.6s ease 0.35s both}
+    .a4{animation:fadeUp 0.6s ease 0.5s both}
+
+    nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:24px 48px;flex-shrink:0}
+
+    .signin-btn{
+      color:#9ca3af;
+      font-family:'Space Grotesk',sans-serif;
+      font-weight:600;
+      font-size:14px;
+      text-decoration:none;
+      padding:10px 24px;
+      border-radius:12px;
+      border:1px solid rgba(255,255,255,0.08);
+      background:rgba(255,255,255,0.03);
+      transition:all 0.2s;
+      display:inline-block;
+    }
+    .signin-btn:hover{border-color:rgba(0,229,255,0.3);color:#fff;background:rgba(0,229,255,0.05)}
+
+    main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 24px;position:relative;z-index:10}
+
+    .hero-title{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:clamp(44px,6vw,72px);line-height:1.08;letter-spacing:-2px;color:#fff;margin-bottom:20px}
+    .hero-title em{font-style:normal;background:linear-gradient(90deg,#00e5ff 0%,#7b61ff 40%,#ff4d6d 70%,#00e5ff 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s linear infinite}
+
+    .hero-sub{color:#4b5563;font-size:15px;line-height:1.75;max-width:420px;margin:0 auto 40px}
+
+    .cta-btn{
+      padding:15px 40px;
+      border-radius:14px;
+      background:#fff;
+      color:#000;
+      font-family:'Space Grotesk',sans-serif;
+      font-weight:800;
+      font-size:15px;
+      text-decoration:none;
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      transition:all 0.2s;
+      margin-bottom:56px;
+    }
+    .cta-btn:hover{background:#f0f0f0;transform:translateY(-2px)}
+
+    .stats{display:flex;align-items:center;gap:44px;flex-wrap:wrap;justify-content:center}
+    .stat{text-align:center}
+    .stat-val{font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:20px;margin-bottom:5px}
+    .stat-lbl{font-size:11px;color:#2d3748;letter-spacing:0.5px}
+    .stat-div{width:1px;height:32px;background:#1a2030}
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="orb" style="width:700px;height:700px;background:rgba(0,229,255,0.04);top:-250px;right:-200px"></div>
+  <div class="orb" style="width:600px;height:600px;background:rgba(123,97,255,0.04);bottom:-200px;left:-150px"></div>
+
+  <nav class="a1">
+    <a href="/" style="text-decoration:none;display:inline-flex;align-items:center;gap:14px">
+      <div style="width:48px;height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,rgba(0,229,255,0.15),rgba(123,97,255,0.15));border:1px solid rgba(0,229,255,0.35)">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00e5ff" stroke-width="2.2">
+          <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+          <path d="M2 17l10 5 10-5"/>
+          <path d="M2 12l10 5 10-5"/>
+        </svg>
+      </div>
+      <div style="line-height:1">
+        <span style="font-family:'Space Grotesk',sans-serif;font-weight:300;font-size:32px;letter-spacing:-1px;background:linear-gradient(90deg,#ffffff 0%,#00e5ff 30%,#7b61ff 60%,#ffffff 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s linear infinite;display:inline">Interview</span><span style="font-family:'Space Grotesk',sans-serif;font-weight:800;font-size:32px;letter-spacing:-1px;background:linear-gradient(90deg,#00e5ff 0%,#7b61ff 40%,#ff4d6d 70%,#00e5ff 100%);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s linear infinite;display:inline">AI</span>
+      </div>
+    </a>
+    <a href="/login" class="signin-btn">Sign in</a>
+  </nav>
+
+  <main>
+    <h1 class="hero-title a2">
+      Your AI coach for<br>
+      <em>every interview</em>
+    </h1>
+
+    <p class="hero-sub a3">
+      Practice real questions, get instant feedback<br>and walk in with confidence.
+    </p>
+
+    <a href="/register" class="cta-btn a3">
+      Start for free
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="2.5" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+    </a>
+
+    <div class="stats a4">
+      <div class="stat">
+        <div class="stat-val" style="color:#00e5ff">Voice</div>
+        <div class="stat-lbl">Real interviews</div>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <div class="stat-val" style="color:#7b61ff">AI Coach</div>
+        <div class="stat-lbl">Instant feedback</div>
+      </div>
+      <div class="stat-div"></div>
+      <div class="stat">
+        <div class="stat-val" style="color:#00e676">10 min</div>
+        <div class="stat-lbl">Per session</div>
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
