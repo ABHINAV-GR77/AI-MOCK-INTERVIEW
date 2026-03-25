@@ -137,7 +137,7 @@ async function handleRegister() {
   try {
     const res  = await fetch('/register', { method: 'POST', headers: { 'Content-Type': 'application/json' }, credentials: 'include', body: JSON.stringify({ email, password, name }) });
     const data = await res.json();
-    if (res.ok) { showSuccess('success-msg'); setTimeout(() => window.location.href = '/', 1500); }
+    if (res.ok) { showSuccess('success-msg'); setTimeout(() => window.location.href = '/login', 1500); }
     else showError('error-msg', '⚠ ' + (data.detail || 'Registration failed.'));
   } catch { showError('error-msg', '⚠ Network error. Try again.'); }
   finally  { setLoading('reg-btn', 'btn-text', 'spinner', false, '', 'CREATE ACCOUNT'); }
