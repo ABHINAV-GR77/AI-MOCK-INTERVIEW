@@ -1,4 +1,4 @@
-# InterviewAI 🎯
+# InterviewAI 🤖
 
 An AI-powered mock interview platform with text and voice interview modes, real-time scoring, analytics, and personalized coaching.
 
