@@ -7,6 +7,7 @@ from fastapi import FastAPI
 from fastapi.staticfiles import StaticFiles
 
 from app.routes import auth, dashboard, interview, voice, analytics, misc
+from app.paths import DATA_DIR, FRONTEND_STATIC_DIR
 
 
 def auto_seed():
@@ -32,7 +33,6 @@ def auto_seed():
 
         CHROMA_HOST = os.getenv("CHROMA_HOST", "chromadb")
         CHROMA_PORT = int(os.getenv("CHROMA_PORT", 8000))
-        DATA_DIR = "/app/backend/data"
         BATCH_SIZE = 100
         CSV_FILES = [
             "software_engineer.csv",
@@ -85,7 +85,7 @@ def auto_seed():
         total_loaded = 0
 
         for fname in CSV_FILES:
-            fpath = os.path.join(DATA_DIR, fname)
+            fpath = os.path.join(str(DATA_DIR), fname)
             if not os.path.exists(fpath):
                 print(f"[SEED] WARNING: {fpath} not found.", flush=True)
                 continue
@@ -139,7 +139,10 @@ async def lifespan(app: FastAPI):
 
 app = FastAPI(title="InterviewAI", lifespan=lifespan)
 
-app.mount("/static", StaticFiles(directory="/app/backend/frontend/static"), name="static")
+if not FRONTEND_STATIC_DIR.exists():
+    raise RuntimeError(f"Static directory not found: {FRONTEND_STATIC_DIR}")
+
+app.mount("/static", StaticFiles(directory=str(FRONTEND_STATIC_DIR)), name="static")
 
 app.include_router(auth.router)
 app.include_router(dashboard.router)

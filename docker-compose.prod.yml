@@ -1,0 +1,39 @@
+services:
+  backend:
+    image: ${BACKEND_IMAGE}
+    container_name: interviewai-backend
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+      - redis
+      - chromadb
+    env_file:
+      - .env
+
+  mongodb:
+    image: mongo:7
+    container_name: interviewai-mongodb
+    restart: unless-stopped
+    volumes:
+      - mongo_data:/data/db
+
+  redis:
+    image: redis:7-alpine
+    container_name: interviewai-redis
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+
+  chromadb:
+    image: chromadb/chroma:0.5.3
+    container_name: interviewai-chromadb
+    restart: unless-stopped
+    volumes:
+      - chroma_data:/chroma/chroma
+
+volumes:
+  mongo_data:
+  redis_data:
+  chroma_data:

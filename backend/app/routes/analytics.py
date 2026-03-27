@@ -5,6 +5,7 @@ from fastapi.templating import Jinja2Templates
 
 from app.database import sessions_col, get_chroma
 from app.models import AICoachRequest
+from app.paths import FRONTEND_PAGES_DIR
 from app.routes.auth import get_current_user
 try:
     from app.utils import groq_chat
@@ -22,7 +23,7 @@ except ImportError:
         return resp.choices[0].message.content.strip()
 
 router = APIRouter()
-templates = Jinja2Templates(directory="/app/backend/frontend/pages")
+templates = Jinja2Templates(directory=str(FRONTEND_PAGES_DIR))
 
 
 @router.get("/analytics", response_class=HTMLResponse)

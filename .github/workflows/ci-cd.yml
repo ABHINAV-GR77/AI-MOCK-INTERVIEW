@@ -1,0 +1,200 @@
+name: CI/CD
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+env:
+  PYTHON_VERSION: "3.11"
+  IMAGE_NAME: ghcr.io/${{ github.repository_owner }}/ai-mock-interview-backend
+
+jobs:
+  frontend-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: Run frontend checks
+        run: pytest tests/frontend -q
+
+  backend-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements-dev.txt
+
+      - name: Run backend tests
+        env:
+          GROQ_API_KEY: test-key
+          MAIL_USERNAME: ""
+          MAIL_PASSWORD: ""
+          SECRET_KEY: test-secret
+        run: pytest tests/backend -q
+
+  selenium-tests:
+    runs-on: ubuntu-latest
+    needs:
+      - frontend-tests
+      - backend-tests
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create CI environment file
+        run: |
+          cat <<'EOF' > .env
+          GROQ_API_KEY=test-key
+          ASSEMBLYAI_API_KEY=test-key
+          MONGODB_URL=mongodb://mongodb:27017
+          REDIS_URL=redis://redis:6379
+          MAIL_USERNAME=
+          MAIL_PASSWORD=
+          SECRET_KEY=test-secret
+          EOF
+
+      - name: Start application stack
+        run: docker compose up -d --build
+
+      - name: Start Selenium container
+        run: docker run -d --name selenium -p 4444:4444 --shm-size=2g selenium/standalone-chrome:latest
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install Selenium test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r backend/requirements-dev.txt
+
+      - name: Wait for backend
+        shell: bash
+        run: |
+          for i in {1..30}; do
+            if curl -fsS http://127.0.0.1:8000/login >/dev/null; then
+              exit 0
+            fi
+            sleep 5
+          done
+          docker compose logs backend
+          exit 1
+
+      - name: Run Selenium smoke tests
+        env:
+          APP_BASE_URL: http://127.0.0.1:8000
+          SELENIUM_REMOTE_URL: http://127.0.0.1:4444/wd/hub
+        run: pytest tests/selenium -q
+
+      - name: Dump container logs on failure
+        if: failure()
+        run: docker compose logs
+
+      - name: Stop containers
+        if: always()
+        run: |
+          docker rm -f selenium || true
+          docker compose down -v
+
+  docker-build:
+    runs-on: ubuntu-latest
+    needs:
+      - selenium-tests
+    permissions:
+      contents: read
+      packages: write
+
+    outputs:
+      image_tag: ${{ steps.meta.outputs.version }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Extract Docker metadata
+        id: meta
+        uses: docker/metadata-action@v5
+        with:
+          images: ${{ env.IMAGE_NAME }}
+          tags: |
+            type=sha
+            type=raw,value=latest,enable={{is_default_branch}}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to GHCR
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and optionally push image
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          file: backend/Dockerfile
+          push: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs:
+      - docker-build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && secrets.DEPLOY_HOST != '' && secrets.DEPLOY_USER != '' && secrets.DEPLOY_SSH_KEY != '' && secrets.DEPLOY_PATH != '' && secrets.GHCR_PULL_TOKEN != ''
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Copy production compose file
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || 22 }}
+          source: docker-compose.prod.yml
+          target: ${{ secrets.DEPLOY_PATH }}
+
+      - name: Deploy updated backend image
+        uses: appleboy/ssh-action@v1.2.0
+        env:
+          BACKEND_IMAGE: ${{ env.IMAGE_NAME }}:sha-${{ github.sha }}
+          GHCR_USERNAME: ${{ github.actor }}
+          GHCR_PULL_TOKEN: ${{ secrets.GHCR_PULL_TOKEN }}
+          DEPLOY_PATH: ${{ secrets.DEPLOY_PATH }}
+        with:
+          host: ${{ secrets.DEPLOY_HOST }}
+          username: ${{ secrets.DEPLOY_USER }}
+          key: ${{ secrets.DEPLOY_SSH_KEY }}
+          port: ${{ secrets.DEPLOY_PORT || 22 }}
+          envs: BACKEND_IMAGE,GHCR_USERNAME,GHCR_PULL_TOKEN,DEPLOY_PATH
+          script: |
+            mkdir -p "$DEPLOY_PATH"
+            cd "$DEPLOY_PATH"
+            mv docker-compose.prod.yml docker-compose.yml
+            echo "$GHCR_PULL_TOKEN" | docker login ghcr.io -u "$GHCR_USERNAME" --password-stdin
+            BACKEND_IMAGE="$BACKEND_IMAGE" docker compose pull backend
+            BACKEND_IMAGE="$BACKEND_IMAGE" docker compose up -d

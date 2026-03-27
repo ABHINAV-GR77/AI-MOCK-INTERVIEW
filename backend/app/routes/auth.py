@@ -13,9 +13,10 @@ from fastapi.templating import Jinja2Templates
 
 from app.database import users_col, redis_client
 from app.models import UserRegister, UserLogin, ForgotPassword, ResetPassword
+from app.paths import FRONTEND_PAGES_DIR
 
 router = APIRouter()
-templates = Jinja2Templates(directory="/app/backend/frontend/pages")
+templates = Jinja2Templates(directory=str(FRONTEND_PAGES_DIR))
 
 SESSION_TTL = 60 * 60 * 3  # 3 hours
 OTP_TTL     = 60 * 10   # 10 min

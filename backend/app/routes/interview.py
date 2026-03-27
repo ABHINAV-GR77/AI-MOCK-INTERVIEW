@@ -11,10 +11,11 @@ from groq import Groq
 
 from app.database import sessions_col, get_chroma
 from app.models import StartInterviewRequest, AnswerRequest, EndInterviewRequest
+from app.paths import FRONTEND_PAGES_DIR
 from app.routes.auth import get_current_user
 
 router = APIRouter()
-templates = Jinja2Templates(directory="/app/backend/frontend/pages")
+templates = Jinja2Templates(directory=str(FRONTEND_PAGES_DIR))
 groq_client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 def groq_chat(messages: list, max_tokens: int = 600) -> str:

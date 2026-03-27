@@ -4,10 +4,11 @@ from fastapi.templating import Jinja2Templates
 from datetime import datetime, timedelta
 
 from app.database import sessions_col, redis_client
+from app.paths import FRONTEND_PAGES_DIR
 from app.routes.auth import get_current_user
 
 router = APIRouter()
-templates = Jinja2Templates(directory="/app/backend/frontend/pages")
+templates = Jinja2Templates(directory=str(FRONTEND_PAGES_DIR))
 
 
 @router.get("/dashboard", response_class=HTMLResponse)

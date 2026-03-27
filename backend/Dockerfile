@@ -2,9 +2,12 @@ FROM python:3.11-slim
 
 WORKDIR /app/backend
 
-COPY requirements.txt .
+COPY backend/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY . .
+COPY backend/app ./app
+COPY backend/data ./data
+COPY backend/seed_data.py ./seed_data.py
+COPY frontend ./frontend
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload", "--app-dir", "/app/backend"]
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
